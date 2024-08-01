@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+}
+.box1, .box2{
+    height: 10cm;
+    border: 1px solid black;
+    box-sizing: border-box;
+    
+}
+.box1{
+    width: 50%;
+    background: lightgrey;
+    text-align: center;
+}
+.box2{
+    width: 50%;
+    background: blueviolet;
+    text-align: center;
+}

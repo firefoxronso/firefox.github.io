@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with Request Code</title>
+    <style>
+    	body{
+    		background-color: grey;
+    	}
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 5%;
+              
+        }
+        th, td {
+            border: 1px solid maroon;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: green;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer{
+            background-color: water;
+            color: white;
+            height: 1cm;
+            padding-top: 4cm;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: maroon;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            color: blue;
+        }
+    </style>
+      <script>
+    function provideDetails() {
+      
+      var detailsContainer = document.getElementById("details-container");
+      detailsContainer.innerHTML = "<p>firefox code.</p>";
+    }
+  </script>
+</head>
+<body>
+	     <header>
+        <h1>Firefox ulgy</h1>
+    </header>
+   <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="login.html">Administration</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </nav>
+
+<h2> code request</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>day</th>
+            <th>League</th>
+            <th>Hot match</th>
+            <th>Request Code</th> <!-- New column for request code -->
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Today</td>
+            <td>
+               Euro 2024
+            </td>
+            <td>Portugal vs france </td>
+
+            <td><a href="details.html"><button>Request Details</button></a></td>
+            <div id="details-container"></div>
+
+        </tr>
+        <tr>
+            <td>upcoming</td>
+            <td>World</td>
+            <td>soon will be uploaded</td>
+            <td><a href="details.html"><button>Request Details</button></a></td>
+            <div id="details-container"></div>
+        </tr>
+    </tbody>
+</table>
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>

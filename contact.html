@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Betting System</title>
+
+    <style>
+
+        body{
+            background-color: chocolates;
+        }
+         header {
+            background-color: green;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer{
+            background-color: yellow;
+            color: black;
+            height: 1.2cm;
+            text-align: center;
+            padding-top: 1cm;
+            width: 100%;
+
+        }
+        
+        nav {
+            background-color: maroon;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            color: blue;
+        }
+        main{
+            text-align: center;
+            background-color: magenta;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <h1>Firefox ulgy</h1>
+    </header>
+   <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="welcome.html">welcome</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </nav>
+
+    <main>
+        <section id="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="contact.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div></br>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+              <br>  <button type="submit">Send Message</button></br>
+            </form>
+        </section>
+        <section id="contact-options">
+        </main>
+   
+    <h2>Contact Options</h2>
+    <ul>
+        <li><a href="tel:+255678043562">Call us: +255678043562</a></li>
+        <li><a href="sms:+255678043562">Send us an SMS: +255678043562</a></li>
+        <li><a href="https://wa.me/+255678043562">Message us on WhatsApp</a></li>
+    </ul>
+</section>
+
+    <footer>
+        <p>&copy; 2024 Betting System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details Page</title>
+  <style>
+    body{
+      text-align: center;
+      background-image: url(pitch.JPG);
+      padding-top: 3cm;
+    }
+    p{
+      background-color: water;
+      color: white;
+      text-align: center;
+      font-size: 30px;
+    }
+    #copyBtn {
+      padding: 5px 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+      <script>
+        function exitPage() {
+            window.location.href = 'Table.html'; 
+        }
+            function copyText() {
+      var text = document.getElementById("textToCopy");
+      var textArea = document.createElement("textarea");
+      textArea.value = text.textContent;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textArea);
+      alert("Text copied to clipboard: " + text.textContent);
+    }
+    </script>
+</head>
+<body>
+  <h1>code requested</h1>
+  <p>code: 12345</p>
+  <button onclick="exitPage()">Exit</button>
+    <div id="copyContainer">
+    <p id="textToCopy"><p>12345</p></p>
+    <button id="copyBtn" onclick="copyText()">Copy Text</button>
+  </div>
+</body>
+</html>

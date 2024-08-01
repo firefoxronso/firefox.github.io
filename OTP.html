@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Number via WhatsApp</title>
+</head>
+<body>
+    <h2>Confirmation Number via WhatsApp</h2>
+    <form id="confirmationForm">
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" required>
+        <button type="button" onclick="sendConfirmationNumber()">Send Confirmation Number</button>
+    </form>
+
+    <p id="statusMessage"></p>
+
+    <script>
+        function sendConfirmationNumber() {
+            var phoneNumber = document.getElementById('phoneNumber').value;
+            var apiUrl = 'https://api.your-third-party-service.com/sendConfirmationNumber?phoneNumber=' + phoneNumber;
+
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        document.getElementById('statusMessage').innerText = 'Confirmation number sent successfully via WhatsApp!';
+                    } else {
+                        document.getElementById('statusMessage').innerText = 'Failed to send confirmation number. Please try again.';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('statusMessage').innerText = 'Failed to send confirmation number. Please try again later.';
+                });
+        }
+    </script>
+</body>
+</html>
